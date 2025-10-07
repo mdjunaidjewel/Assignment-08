@@ -1,0 +1,236 @@
+[
+  {
+    "image": "https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png",
+    "title": "Facebook: Connect People",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "Connect with friends and the world around you on Facebook.",
+    "size": 50,
+    "reviews": "18K",
+    "ratingAvg": 4.2,
+    "downloads": "7.5M",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 400000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/free-psd/instagram-application-logo_23-2151544100.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "Instagram: Share Life",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Bringing you closer to the people and things you love.",
+    "size": 40,
+    "reviews": "17K",
+    "ratingAvg": 4.5,
+    "downloads": "9.8M",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 120000 },
+      { "name": "5 star", "count": 160000 }
+    ]
+  },
+  {
+    "image": "https://pngimg.com/d/whatsapp_PNG95159.png",
+    "title": "WhatsApp: Chat Securely",
+    "companyName": "WhatsApp LLC",
+    "id": 3,
+    "description": "Simple. Personal. Secure messaging.",
+    "size": 30,
+    "reviews": "19K",
+    "ratingAvg": 4.6,
+    "downloads": "8.2M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+  {
+    "image": "https://pngimg.com/d/youtube_PNG5.png",
+    "title": "YouTube: Watch Videos",
+    "companyName": "Google LLC",
+    "id": 4,
+    "description": "Enjoy your favorite videos and channels with the official YouTube app.",
+    "size": 60,
+    "reviews": "16K",
+    "ratingAvg": 4.3,
+    "downloads": "9.3M",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 180000 },
+      { "name": "5 star", "count": 240000 }
+    ]
+  },
+  {
+    "image": "https://img.freepik.com/free-psd/social-media-logo-design_23-2151296966.jpg",
+    "title": "TikTok: Short Clips",
+    "companyName": "TikTok Pte. Ltd.",
+    "id": 5,
+    "description": "Make every second count.",
+    "size": 70,
+    "reviews": "20K",
+    "ratingAvg": 4.7,
+    "downloads": "8.9M",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "image": "https://static.vecteezy.com/system/resources/previews/018/930/695/non_2x/twitter-logo-twitter-icon-transparent-free-free-png.png",
+    "title": "Twitter: Global Trends",
+    "companyName": "Twitter, Inc.",
+    "id": 6,
+    "description": "See what’s happening in the world right now.",
+    "size": 50,
+    "reviews": "18K",
+    "ratingAvg": 4.0,
+    "downloads": "7.1M",
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 40000 },
+      { "name": "4 star", "count": 60000 },
+      { "name": "5 star", "count": 80000 }
+    ]
+  },
+  {
+    "image": "https://pngimg.com/d/snapchat_PNG71.png",
+    "title": "Snapchat: Fun Moments",
+    "companyName": "Snap Inc",
+    "id": 7,
+    "description": "Life's more fun when you live in the moment.",
+    "size": 40,
+    "reviews": "15K",
+    "ratingAvg": 4.4,
+    "downloads": "6.8M",
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 20000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 40000 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/51rttY7a+9L._h1_.png",
+    "title": "Spotify: Music Stream",
+    "companyName": "Spotify Ltd.",
+    "id": 8,
+    "description": "Music for everyone.",
+    "size": 80,
+    "reviews": "19K",
+    "ratingAvg": 4.5,
+    "downloads": "9.5M",
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 8000 },
+      { "name": "3 star", "count": 16000 },
+      { "name": "4 star", "count": 24000 },
+      { "name": "5 star", "count": 32000 }
+    ]
+  },
+  {
+    "image": "https://pngimg.com/uploads/netflix/netflix_PNG13.png",
+    "title": "Netflix: Movie Shows",
+    "companyName": "Netflix, Inc.",
+    "id": 9,
+    "description": "Watch TV shows and movies online.",
+    "size": 90,
+    "reviews": "17K",
+    "ratingAvg": 4.6,
+    "downloads": "8.3M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/31epF-8N9LL.png",
+    "title": "Amazon: Online Deals",
+    "companyName": "Amazon Mobile LLC",
+    "id": 10,
+    "description": "Shop online with Amazon.",
+    "size": 100,
+    "reviews": "20K",
+    "ratingAvg": 4.3,
+    "downloads": "9.1M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 24000 }
+    ]
+  },
+  {
+    "image": "https://www.google.com/images/branding/product/2x/maps_96in128dp.png",
+    "title": "G. Maps: Easy Navigation",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Navigate your world faster and easier.",
+    "size": 110,
+    "reviews": "15K",
+    "ratingAvg": 4.7,
+    "downloads": "10M",
+    "ratings": [
+      { "name": "1 star", "count": 1000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 6000 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/QRRGW2tMZ4-FNw0XWk6WWiXHaQCGxuwM-92HrBhlA4WOd_AGmjVmQkiHyAqQjW2yByc",
+    "title": "G. Chrome: Fast Browsing",
+    "companyName": "Google LLC",
+    "id": 12,
+    "description": "Fast, secure, and free web browser.",
+    "size": 120,
+    "reviews": "19K",
+    "ratingAvg": 4.4,
+    "downloads": "9.7M",
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 12000 },
+      { "name": "5 star", "count": 16000 }
+    ]
+  },
+  {
+    "image": "https://sm.pcmag.com/pcmag_uk/review/g/google-dri/google-drive_knva.png",
+    "title": "Google Drive: File Storage",
+    "companyName": "Google LLC",
+    "id": 13,
+    "description": "Securely store your files and collaborate anywhere.",
+    "size": 100,
+    "reviews": "16K",
+    "ratingAvg": 4.4,
+    "downloads": "8.7M",
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 6000 },
+      { "name": "3 star", "count": 12000 },
+      { "name": "4 star", "count": 18000 },
+      { "name": "5 star", "count": 24000 }
+    ]
+  }
+]
