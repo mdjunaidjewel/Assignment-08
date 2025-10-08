@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png'
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import github from '../../assets/github.png'
 
 const Navbar = () => {
@@ -45,9 +45,9 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <NavLink to="/" className="btn btn-ghost text-xl text-blue-500">
+            <Link to="/" className="btn btn-ghost text-xl text-blue-500">
               <img className="w-[35px]" src={logo} alt="" /> HERO.IO
-            </NavLink>
+            </Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-xl">

@@ -8,39 +8,50 @@ import {
   Bar,
   XAxis,
   YAxis,
-  CartesianGrid,
   Tooltip,
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { toast, ToastContainer } from "react-toastify";
 
 const AppDetails = () => {
   const { id } = useParams();
   const appsData = useLoaderData();
   const app = appsData.find((f) => f.id === parseInt(id));
-  const { title, companyName, ratingAvg, reviews, downloads, ratings, size } =
-    app;
+  const {
+    title,
+    companyName,
+    ratingAvg,
+    reviews,
+    downloads,
+    ratings,
+    size,
+    description,
+  } = app;
 
   const [isInstalled, setIsInstalled] = useState(false);
 
-  const handleInstall = () => {
+  const handleInstall = (app) => {
+    if (isInstalled) return;
     setIsInstalled(true);
+    toast(`Wow!! '${app.title}' Installed Successfully!`);
   };
 
   return (
     <div>
+      {/* -------- Header Section -------- */}
       <div className="sm:flex sm:gap-10 items-center w-11/12 mx-auto bg-[#f5f5f5] mt-5 sm:mt-10 rounded-2xl p-5">
-        <div className="bg-blue-100 rounded-2xl">
+        <div className="bg-blue-100 rounded-2xl flex justify-center items-center p-5">
           <img
-            className="w-72 sm:w-100 mb-5 sm:mb-0"
+            className="w-60 sm:w-80 mb-5 sm:mb-0 object-contain"
             src={app.image}
             alt={title}
           />
         </div>
 
-        <div>
-          <h1 className="sm:text-5xl font-semibold">{title}</h1>
-          <p className="sm:text-2xl py-3">
+        <div className="sm:flex-1">
+          <h1 className="text-3xl sm:text-5xl font-semibold">{title}</h1>
+          <p className="text-lg sm:text-2xl py-3">
             Developed by{" "}
             <span className="text-blue-500 font-medium">{companyName}</span>
           </p>
@@ -65,10 +76,9 @@ const AppDetails = () => {
 
           <div className="mt-5">
             <button
-              onClick={handleInstall}
-              disabled={isInstalled}
+              onClick={() => handleInstall(app)}
               className={`btn btn-primary ${
-                isInstalled ? "cursor-not-allowed bg-primary" : ""
+                isInstalled ? "cursor-not-allowed btn-primary" : ""
               }`}
             >
               {isInstalled ? "Installed" : `Install Now (${size} MB)`}
@@ -77,19 +87,15 @@ const AppDetails = () => {
         </div>
       </div>
 
+      {/* -------- Ratings Graph Section -------- */}
       <div className="mt-10 sm:w-11/12 mx-auto bg-white rounded-2xl p-5">
-        <h2 className="text-2xl font-semibold mb-5 text-center sm:text-left">
+        <h2 className=" text-2xl sm:text-3xl font-semibold sm:font-bold mb-5 text-center sm:text-left">
           Ratings
         </h2>
 
         <div className="w-full h-[250px] sm:h-[350px]">
           <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-              data={[...ratings].reverse()}
-              layout="vertical"
-            >
-              
-
+            <BarChart data={[...ratings].reverse()} layout="vertical">
               <XAxis type="number" tick={{ fontSize: 10, fill: "#555" }} />
               <YAxis
                 dataKey="name"
@@ -104,11 +110,8 @@ const AppDetails = () => {
                   borderRadius: "8px",
                 }}
               />
-              <Legend
-                wrapperStyle={{
-                  fontSize: 12,
-                }}
-              />
+              <Legend wrapperStyle={{ fontSize: 12 }} />
+
               <defs>
                 <linearGradient id="yellowGradient" x1="0" y1="0" x2="1" y2="0">
                   <stop offset="0%" stopColor="#facc15" />
@@ -126,6 +129,18 @@ const AppDetails = () => {
           </ResponsiveContainer>
         </div>
       </div>
+
+      {/* -------- Description Section -------- */}
+      <div className="mt-8 sm:w-11/12 mx-auto border-t-1 p-5 text-gray-700">
+        <h2 className="text-2xl sm:text-3xl font-semibold sm:font-bold mb-3 text-center sm:text-left">
+          Description
+        </h2>
+        <p className="text-sm sm:text-base leading-relaxed text-justify">
+          {description}
+        </p>
+      </div>
+
+      <ToastContainer position="top-center" />
     </div>
   );
 };
