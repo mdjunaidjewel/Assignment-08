@@ -77,35 +77,54 @@ const AppDetails = () => {
         </div>
       </div>
 
-      <div className="mt-10 w-11/12 mx-auto bg-white rounded-2xl p-5">
-        <h2 className="text-2xl font-semibold mb-5">Ratings</h2>
+      <div className="mt-10 sm:w-11/12 mx-auto bg-white rounded-2xl p-5">
+        <h2 className="text-2xl font-semibold mb-5 text-center sm:text-left">
+          Ratings
+        </h2>
 
-        <ResponsiveContainer width="100%" height={300}>
-          <BarChart
-            data={[...ratings].reverse()}
-            layout="vertical"
-            margin={{ top: 20, right: 30, left: 60, bottom: 20 }}
-          >
-            <XAxis type="number" />
-            <YAxis dataKey="name" type="category" />
-            <Tooltip />
-            <Legend />
+        <div className="w-full h-[250px] sm:h-[350px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={[...ratings].reverse()}
+              layout="vertical"
+            >
+              
 
-            <defs>
-              <linearGradient id="yellowGradient" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#facc15" />
-                <stop offset="100%" stopColor="#eab308" />
-              </linearGradient>
-            </defs>
+              <XAxis type="number" tick={{ fontSize: 10, fill: "#555" }} />
+              <YAxis
+                dataKey="name"
+                type="category"
+                tick={{ fontSize: 12, fill: "#333" }}
+                width={70}
+              />
 
-            <Bar
-              dataKey="count"
-              fill="url(#yellowGradient)"
-              barSize={30}
-              animationDuration={1000}
-            />
-          </BarChart>
-        </ResponsiveContainer>
+              <Tooltip
+                contentStyle={{
+                  backgroundColor: "#fef9c3",
+                  borderRadius: "8px",
+                }}
+              />
+              <Legend
+                wrapperStyle={{
+                  fontSize: 12,
+                }}
+              />
+              <defs>
+                <linearGradient id="yellowGradient" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stopColor="#facc15" />
+                  <stop offset="100%" stopColor="#eab308" />
+                </linearGradient>
+              </defs>
+
+              <Bar
+                dataKey="count"
+                fill="url(#yellowGradient)"
+                barSize={25}
+                animationDuration={800}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );
