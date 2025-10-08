@@ -49,7 +49,7 @@ const Apps = () => {
       </p>
 
       {/* Search */}
-      <div className="flex justify-between items-center w-11/12 mx-auto pt-4">
+      <div className=" space-y-2 sm:flex justify-between items-center w-11/12 mx-auto pt-4">
         <h2 className="font-bold">({filterApps.length}) Apps Found</h2>
         <div>
           <label className="input">
