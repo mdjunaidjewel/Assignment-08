@@ -11,12 +11,12 @@ const InstallCard = ({ app, onRemove }) => {
         />
         <div>
           <h2 className="text-lg font-bold">{app.title}</h2>
-          <p className="text-sm text-gray-500">{app.companyName}</p>
+          <p className="text-sm text-gray-500">{app.downloads}</p>
         </div>
       </div>
       <div className="flex justify-between mt-3 items-center">
         <button
-          onClick={()=>onRemove(app)}
+          onClick={() => onRemove(app)}
           className="bg-gray-600 text-white text-sm px-5 py-3 rounded hover:bg-red-600 duration-200"
         >
           Uninstall

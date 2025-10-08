@@ -6,9 +6,8 @@ import { toast, ToastContainer } from "react-toastify";
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [sortOrder, setSortOrder] = useState("asc"); // ✅ sort state যোগ করা হয়েছে
+  const [sortOrder, setSortOrder] = useState("");
 
-  // localStorage থেকে ডেটা নেওয়া
   useEffect(() => {
     setLoading(true);
     const apps = JSON.parse(localStorage.getItem("installedApps")) || [];
@@ -18,16 +17,14 @@ const Installation = () => {
     }, 300);
   }, []);
 
-  // ✅ Sort Logic
   const sortedApps = [...installedApps].sort((a, b) => {
     if (sortOrder === "asc") {
-      return a.title.localeCompare(b.title);
+      return a.downloads.localeCompare(b.downloads);
     } else {
-      return b.title.localeCompare(a.title);
+      return b.downloads.localeCompare(a.downloads);
     }
   });
 
-  // ✅ Uninstall Function
   const handleRemove = (id, app) => {
     const updatedApps = installedApps.filter((app) => app.id !== id);
     setInstalledApps(updatedApps);
@@ -42,7 +39,7 @@ const Installation = () => {
   return (
     <div className="min-h-screen py-0 sm:py-8">
       <div className="w-11/12 mx-auto py-2 sm:py-10">
-        {/* ---------- Header Section ---------- */}
+        {/*Header Section*/}
         <div className="flex flex-col sm:flex-row justify-between items-center mb-6">
           <h2 className="text-xl sm:text-2xl font-semibold text-blue-400 underline">
             {installedApps.length} Apps Found
@@ -50,19 +47,19 @@ const Installation = () => {
 
           {/* Sort Dropdown */}
           <div className="mt-4 sm:mt-0">
-            <label className="mr-2 font-medium">Sort by:</label>
             <select
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
-              className=" border-2 rounded-lg px-3 py-1 focus:outline-none focus:ring-1"
+              className=" font-semibold border-2 rounded-lg px-3 py-1 focus:outline-none focus:ring-1"
             >
-              <option className="sm:text-sm" value="asc">High-Low</option>
-              <option value="desc">Low-High</option>
+            <option value="" className="text-gray-400">Sort By Size</option>
+            <option className="sm:font-semibold" value="desc">High-Low</option>
+              <option className="sm:font-semibold" value="asc">Low-High</option>
             </select>
           </div>
         </div>
 
-        {/* ---------- App List Section ---------- */}
+        {/* App List Section */}
         {installedApps.length === 0 ? (
           <p className="text-gray-400 text-center text-2xl">
             No apps installed yet.
