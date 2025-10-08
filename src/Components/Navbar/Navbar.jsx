@@ -46,7 +46,7 @@ const Navbar = () => {
               </ul>
             </div>
             <Link to="/" className="btn btn-ghost text-xl text-blue-500">
-              <img className="w-[35px]" src={logo} alt="" /> HERO.IO
+              <img className=" w-[25px] sm:w-[35px]" src={logo} alt="" /> HERO.IO
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

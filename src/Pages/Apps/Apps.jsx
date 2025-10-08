@@ -7,14 +7,14 @@ const Apps = () => {
   const allApplications = useLoaderData();
   const [search, setSearch] = useState("");
   const [filterApps, setFilterApps] = useState(allApplications);
-  const [loading, setLoading] = useState(true); // initially true for route load spinner
+  const [loading, setLoading] = useState(true); 
 
   // Data load effect
   useEffect(() => {
     const timer = setTimeout(() => {
       setFilterApps(allApplications);
-      setLoading(false); // data loaded => hide spinner
-    }, 500);
+      setLoading(false);
+    }, 400);
 
     return () => clearTimeout(timer);
   }, [allApplications]);
@@ -30,7 +30,7 @@ const Apps = () => {
       );
       setFilterApps(filtered);
       setLoading(false);
-    }, 700);
+    }, 300);
   };
 
   // Show all apps
