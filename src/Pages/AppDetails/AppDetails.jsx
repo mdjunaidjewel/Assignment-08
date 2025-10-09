@@ -99,7 +99,7 @@ const AppDetails = () => {
             <button
               onClick={() => handleInstall(app)}
               className={`btn btn-primary ${
-                isInstalled ? "cursor-not-allowed" : ""
+                isInstalled ? "cursor-not-allowed bg-red-600 text-black border-0" : ""
               }`}
             >
               {isInstalled ? "Installed" : `Install Now (${size} MB)`}

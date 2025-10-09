@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLoaderData, NavLink } from "react-router-dom";
 import AppsCard from "./AppsCard";
 import Loading from "../../Components/Loading/Loading";
+import noFound from '../../assets/App-Error.png'
 
 const Apps = () => {
   const allApplications = useLoaderData();
@@ -69,30 +70,32 @@ const Apps = () => {
         ) : filterApps.length > 0 ? (
           <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
             {filterApps.map((app) => (
-              <AppsCard key={app.id} app={app} />
+              <AppsCard key={app.id} app={app}></AppsCard>
             ))}
           </div>
         ) : (
-          <div className="col-span-full text-4xl text-center font-medium text-red-700">
-            <h1>Sorry! No Apps Found.</h1>
+          <div className="flex flex-col justify-center items-center text-center p-8 mx-auto gap-6 bg-white rounded-2xl ">
+            <img
+              className="w-[180px] sm:w-[220px] opacity-90"
+              src={noFound}
+              alt="Not Found Illustration"
+            />
+            <div>
+              <h1 className="text-2xl sm:text-3xl font-semibold text-red-700 mb-1">
+                Oops! No Apps Found
+              </h1>
+              <p className="text-gray-500 text-sm sm:text-base">
+                The App you are requesting is not found on your system. Please try another Apps!
+              </p>
+            </div>
             <button
               onClick={showAllApps}
-              className="py-2 px-3.5 bg-blue-500 rounded-sm mt-5 text-white text-xl cursor-pointer hover:scale-105 duration-500"
+              className="mt-2 bg-indigo-600 text-white font-semibold py-2 px-6 rounded-md shadow-md hover:scale-105 duration-200"
             >
-              Show All
+              Go Back
             </button>
           </div>
         )}
-      </div>
-
-      {/* NavLink for route reload */}
-      <div className="w-fit mx-auto flex justify-center items-center pb-10">
-        <NavLink
-          to="/Apps"
-          className="py-2 px-3 rounded-sm text-white font-semibold hover:scale-105 duration-150"
-          onClick={() => setLoading(true)} 
-        >
-        </NavLink>
       </div>
     </div>
   );

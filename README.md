@@ -14,7 +14,7 @@ Whether you're looking to focus, manage tasks, track habits, or learn new skills
 
 ---
 
-## Find Our Apps
+## Find My Apps
 
 Our applications are available on the world's leading app platforms:
 
@@ -57,9 +57,9 @@ We are a community-driven company and always looking to improve.
 
 Follow us on social media to get the latest updates, tips, and news!
 
-* [Twitter](https://twitter.com/hero.io)
-* [Facebook](https://facebook.com/hero.io)
-* [Instagram](https://instagram.com/hero.io)
+* [Twitter](https://twitter.com/mdjunaidjewell)
+* [Facebook](https://facebook.com/mdjunaidjewell)
+* [Instagram](https://instagram.com/mdjunaidjewel)
 
 ***
 

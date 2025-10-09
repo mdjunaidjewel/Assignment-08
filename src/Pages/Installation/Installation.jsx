@@ -50,11 +50,17 @@ const Installation = () => {
             <select
               value={sortOrder}
               onChange={(e) => setSortOrder(e.target.value)}
-              className=" font-semibold border-2 rounded-lg px-3 py-1 focus:outline-none focus:ring-1"
+              className=" sm:w-auto text-base sm:font-semibold border-1 sm:border-2 rounded-lg sm:px-3 py-3 focus:outline-none"
             >
-            <option value="" className="text-gray-400">Sort By Size</option>
-            <option className="sm:font-semibold" value="desc">High-Low</option>
-              <option className="sm:font-semibold" value="asc">Low-High</option>
+              <option value="" className="text-gray-400">
+                Sort By Size
+              </option>
+              <option className="sm:font-semibold" value="desc">
+                High-Low
+              </option>
+              <option className="sm:font-semibold" value="asc">
+                Low-High
+              </option>
             </select>
           </div>
         </div>
