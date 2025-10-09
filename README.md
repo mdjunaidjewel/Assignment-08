@@ -1,7 +1,7 @@
 # HERO.IO: We Build Productive Apps 🚀
 
 <div align="center">
-  <img src="Home_Hero_Image_Placeholder.png" alt="HERO.IO Productive Apps Showcase" width="600"/>
+  Live Link: https://heroapps24.netlify.app/
 </div>
 
 ---
